@@ -33,6 +33,7 @@ However, if we wrapped up our background task inside a container and our web fro
 ## Examples
 
  - https://github.com/bfirsh/serverless-docker-examples
+ - Here is a good example i'm converting to a web api https://github.com/ahmetalpbalkan/go-dexec/tree/master/examples/600-parallel-compute
 
 ## Tools
 
