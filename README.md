@@ -50,6 +50,7 @@ However, if we wrapped up our background task inside a container and our web fro
 
 We need your help!
 
+ - Make this work with Docker 1.12.
  - A proxy that scopes a Docker API so that containers can securely manage and run "child" containers.
  - Helpers for injecting the Docker API socket into containers that are run.
  - A server for running scheduled / cron jobs as Docker containers on a Swarm.
