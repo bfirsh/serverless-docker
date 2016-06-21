@@ -32,7 +32,8 @@ However, if we wrapped up our background task inside a container and our web fro
 
 ## Examples
 
- - https://github.com/bfirsh/serverless-docker-voting-app
+ - [Serverless voting app](https://github.com/bfirsh/serverless-docker-voting-app) – A serverless web app
+ - [go-dexec examples](https://github.com/ahmetalpbalkan/go-dexec/tree/master/examples)
 
 ## Tools
 
