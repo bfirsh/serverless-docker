@@ -19,7 +19,7 @@ If your web frontends have access to a Swarm, you can run the task directly on y
 client.run("tasks/reticulate-splines", detach=True)
 ```
 
-To read more about this, [check out this blog post](https://blog.docker.com).
+To read more about this, [check out this blog post](https://blog.docker.com/2016/06/building-serverless-apps-with-docker).
 
 ## Examples
 
