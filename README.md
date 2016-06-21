@@ -32,7 +32,7 @@ However, if we wrapped up our background task inside a container and our web fro
 
 ## Examples
 
- - https://github.com/bfirsh/serverless-docker-examples
+ - https://github.com/bfirsh/serverless-docker-voting-app
 
 ## Tools
 
@@ -52,3 +52,4 @@ We need your help!
 
  - A proxy that scopes a Docker API so that containers can securely manage and run "child" containers.
  - Helpers for injecting the Docker API socket into containers that are run.
+ - A server for running scheduled / cron jobs as Docker containers on a Swarm.
