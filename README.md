@@ -1,14 +1,14 @@
 # Serverless Docker
 
-A simpler, more scalable way of writing distributed apps.
-
 Swarm makes it incredibly easy to run code on your infrastructure. You wrap some code up inside a Docker container, and Swarm will make it run on whatever free resources you have.
 
 But what if those containers could also run other containers on a Swarm? We could put pieces of our application inside containers that are run on-demand on a Swarm. Docker containers can be used as functions from within other applications:
 
-```bash
-$ docker run myapp/leftpad foo 5
-  foo
+```python
+>>> import dockerrun
+>>> client = dockerrun.from_env()
+>>> client.run("bfirsh/leftpad", ["foo", "5"])
+'  foo\n'
 ```
 
 Take, for example, running background tasks in a web app. In a traditional architecture, you would have a set of task workers and a message queue to pass work from the web frontends to the task workers.
@@ -19,21 +19,16 @@ If your web frontends have access to a Swarm, you can run the task directly on y
 client.run("tasks/reticulate-splines", detach=True)
 ```
 
-You can run these from within other Docker applications
-
-Take, for example, running background tasks in a web application. These are things continuously running that need managing, scaling, and so on.
-
-However, if we wrapped up our background task inside a container and our web frontends had access to a Swarm, it could just run the task as a container on Swarm. This eliminates the need for two complex constantly running servers, and because it is run on-demand, it essentially auto-scales and makes efficient use of resources.
-
-## Reading
-
- - [blog post coming soon]
- - [Introducing dexec](https://ahmetalpbalkan.com/blog/dexec/) – What if the Go os/exec library could containerize?
+To read more about this, [check out this blog post](https://blog.docker.com).
 
 ## Examples
 
  - [Serverless voting app](https://github.com/bfirsh/serverless-docker-voting-app) – A serverless web app
  - [go-dexec examples](https://github.com/ahmetalpbalkan/go-dexec/tree/master/examples)
+
+## Reading
+
+ - [Introducing dexec](https://ahmetalpbalkan.com/blog/dexec/) – What if the Go os/exec library could containerize?
 
 ## Tools
 
