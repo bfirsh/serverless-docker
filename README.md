@@ -25,6 +25,7 @@ To read more about this, [check out this blog post](https://blog.docker.com/2016
 
  - [Serverless voting app](https://github.com/bfirsh/serverless-docker-voting-app) – A serverless web app
  - [go-dexec examples](https://github.com/ahmetalpbalkan/go-dexec/tree/master/examples)
+ - [Funker](https://github.com/bfirsh/funker-example-voting-app) – an example app that uses Funker to do processing in the background
 
 ## Reading
 
@@ -32,6 +33,7 @@ To read more about this, [check out this blog post](https://blog.docker.com/2016
 
 ## Tools
 
+ - [Funker](https://github.com/bfirsh/funker) – Functions as Docker containers
  - [go-dcgi](https://github.com/bfirsh/go-dcgi) – CGI, but with Docker containers
 
 ## Client libraries
